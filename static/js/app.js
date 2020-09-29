@@ -32,3 +32,28 @@ function buildTable(data) {
        );
     });
 }
+// Create a new function to handle clicks
+function handleClick() {
+    // get datetime value from filter and store in memory
+    // .select() selects the first element that matches our string, tells it what to look for
+    // .property("value") tells D3 to not only look for the date values, but to store in memory
+    let date = d3.select("#datetime").property("value");
+    // set default filter (display all data)
+    let filteredData = tableData;
+
+    //Check to see if a date was entered
+    if (date) {
+        // date filter - see notes for details
+        filteredData = filteredData.filter(row => row.datetime === date);
+      };
+    // rebuild the table using the filtered data (no filter? original data)
+    buildTable(filteredData);
+};
+
+// listen for click event
+// #filter-btn will be a button tag in the html, this links our code directly to it 
+// handleClick tells d3 to execute the function when the id filter btn is clicked
+d3.selectAll("#filter-btn").on("click", handleClick);
+
+// buiild the table that loads as soon as the page does
+buildTable(tableData);
