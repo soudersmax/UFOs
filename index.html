@@ -14,15 +14,15 @@
     <!-- add link to our style sheet-->
     <link rel="stylesheet" href="static/css/style.css">
 </head>
-<body>
+<body class="bg-dark">
     <!-- wrapper helps group elements and specifies styling in our stylesheet-->
     <div class="wrapper">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
             <!-- navbar brand is a default styling to help with aesthetics-->
             <a class="navbar-brand" href="index.html">UFO Sightings</a>
         </nav>
         <div class="jumbotron">
-            <h1> The Truth Is Out There</h1>
+            <h1 class="display-4"> The Truth Is Out There</h1>
         </div>
         <!-- Add a fluid container to hold article title and paragraph-->
         <div class="container-fluid">
@@ -62,21 +62,22 @@
         <!-- Add additional fluid container for our sightings and filter -->
         <div class="container-fluid">
             <div class="row">
-               <div class="col-md-3">
-                    <form>
+               <div class="col-md-3 text-center">
+                    <form class="bg-dark">
                         <p>Filter Search</p>
-                        <ul class="list-group">
-                            <li class="list-group-item">
+                        <ul class="list-group bg-dark">
+                            <li class="list-group-item bg-dark">
                                 <label for="date">Enter Date</label>
                                 <!-- input will look for text, placeholder provides an example so that users
                                 know location and format for inputting date, and id is what our code will 
                                 look for when the button is clicked and the fxn is executed -->
                                 <input type="text" placeholder="1/10/2010" id="datetime" />
                             </li>
-                            <li class="list-group-item">
+                            <li class="list-group-item bg-dark">
                                 <!-- type button means that default, button does nothing, but the js we wrote will 
                                 override that when there's an input value. class adds bootstrap styling -->
-                                <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
+                                <button id="filter-btn" type="button" class="btn btn-dark btn-block">Filter Table</button>
+                                
                             </li>
                         </ul>
                     </form>
@@ -100,5 +101,11 @@
             </div>
         </div>
     </div>
+    <!-- link to d3 allows the library to react to user input -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+    <!-- link to data.js to load data into the table -->
+    <script src="static/js/data.js"></script>
+    <!-- use the app to interact with the loaded data -->
+    <script src="static/js/app.js"></script>
 </body>
 </html>

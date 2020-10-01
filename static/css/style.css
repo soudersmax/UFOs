@@ -1,0 +1,14 @@
+/* We want to add styling to the body of the page because it is one of the outermost elements.
+Thus, each of the text elements contained within will be the selected color */
+body {
+
+    color: #f7f7f7;
+  }
+/* .jumbotron applies code only to jumbotron class, specify a background image and its location
+set the size to span the entire width and height of the element, no matter the size of viewport,
+align text to center */
+.jumbotron {
+    background-image:url("../images/nasa.jpg");
+    background-size: 100% 100%;
+    text-align: center;
+  }
