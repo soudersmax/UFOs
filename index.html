@@ -62,7 +62,7 @@
         <!-- Add additional fluid container for our sightings and filter -->
         <div class="container-fluid">
             <div class="row">
-               <div class="col-md-3 text-center">
+               <div class="col-md-3">
                     <form class="bg-dark">
                         <p>Filter Search</p>
                         <ul class="list-group bg-dark">
@@ -74,10 +74,32 @@
                                 <input type="text" placeholder="1/10/2010" id="datetime" />
                             </li>
                             <li class="list-group-item bg-dark">
-                                <!-- type button means that default, button does nothing, but the js we wrote will 
-                                override that when there's an input value. class adds bootstrap styling -->
-                                <button id="filter-btn" type="button" class="btn btn-dark btn-block">Filter Table</button>
-                                
+                                <label for="city">Enter City</label>
+                                <!-- input will look for text, placeholder provides an example so that users
+                                know location and format for inputting date, and id is what our code will 
+                                look for when the button is clicked and the fxn is executed -->
+                                <input type="text" placeholder="City" id="city" />
+                            </li>
+                            <li class="list-group-item bg-dark">
+                                <label for="state">Enter State</label>
+                                <!-- input will look for text, placeholder provides an example so that users
+                                know location and format for inputting date, and id is what our code will 
+                                look for when the button is clicked and the fxn is executed -->
+                                <input type="text" placeholder="State" id="state" />
+                            </li>
+                            <li class="list-group-item bg-dark">
+                                <label for="country">Enter Country</label>
+                                <!-- input will look for text, placeholder provides an example so that users
+                                know location and format for inputting date, and id is what our code will 
+                                look for when the button is clicked and the fxn is executed -->
+                                <input type="text" placeholder="Country" id="country" />
+                            </li>
+                            <li class="list-group-item bg-dark">
+                                <label for="shape">Enter Shape</label>
+                                <!-- input will look for text, placeholder provides an example so that users
+                                know location and format for inputting date, and id is what our code will 
+                                look for when the button is clicked and the fxn is executed -->
+                                <input type="text" placeholder="Shape" id="shape" />
                             </li>
                         </ul>
                     </form>
