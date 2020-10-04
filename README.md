@@ -14,13 +14,13 @@ In order to understand the webpages functionality, here are some examples of how
 
 When the page loads, it is automatically populated with each entry from our "data.js" file:
 
-![unfiltered_table](static\images\unfiltered_table.png)
+<img src="static\images\unfiltered_table.png">
 
 
 
 The filter responds to input in any (or all) of the 5 filter fields: date, city, state, country, and shape. For example purposes, we are going to filter for sightings on 1/01/2010 in California.
 
-![filtered_table](static\images\filtered_table.PNG) 
+<img src="static\images\filtered_table.PNG"> 
 
 
 
