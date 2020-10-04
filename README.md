@@ -14,7 +14,7 @@ In order to understand the webpages functionality, here are some examples of how
 
 When the page loads, it is automatically populated with each entry from our "data.js" file:
 
-<img src="static\images\unfiltered_table.png">
+<img src="static\images\unfiltered_table.PNG">
 
 
 
